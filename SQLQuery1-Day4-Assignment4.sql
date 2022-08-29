@@ -94,7 +94,7 @@ select title,author,reviewer_name from books join reviews on books.id=reviews.id
 
 select reviewer_name from reviews group by reviewer_name having count(*)>1;
 
-select name from customers where address like '%o%'
+select name from customers where address like '%o%' and customers.address=customers.address
 
 select LOWER(name) from employee where salary is null order by lower(name);
 
